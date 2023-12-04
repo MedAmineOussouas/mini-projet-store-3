@@ -1,0 +1,390 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.navbar{
+  width: 100%;
+  height: 70px;
+  background-color: aqua;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.navbar *{
+  margin: 10px;
+}
+.cart{
+  height: 100%;
+  border: 1px solid;
+  display: flex;
+
+}
+.cart-icon{
+  height: 40px;
+  width: 40px;
+
+
+
+}
+li{
+  padding: 10px;
+}
+img{
+  width: 200px;
+  height: 200px;
+}
+.products-list{
+  display: grid;
+  grid-template-columns: 19% 19% 19% 19% 19%;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+.product-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius:5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  height: 600px;
+
+}
+.products-item-container{
+  display: flex;
+  flex-direction: row;
+}
+.description{
+  height: 90px;
+  overflow: hidden;
+}
+/* search bar */
+.search {
+  width: 75%;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1.5em;
+  /* color: #9DBFAF; */
+}
+
+.searchButton {
+  width: 100px;
+  height: 46px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* add to cart */
+.add-to-cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00c3c9;
+  color: #fff;
+  border: 2px solid #00c3c9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+
+.cart-item-container{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 25px 0px 25px 200px;
+  border-bottom: 1px solid;
+  position: relative;
+}
+
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0px 0px 25px 0px;
+
+}
+
+.quantity, .remove-item {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+
+}
+.quantity img,.remove-item img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+
+}
+.quantity p{
+  padding: 10px;
+}
+
+.total-price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 300px 20px 0px;
+  position: absolute;
+  right: 0px;
+  width: 250px;
+  height: 120px;
+  
+}
+.confirm-btn{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: #fff;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  height: 50px;
+  /* position: absolute; */
+  /* bottom: -100px; */
+}
+
+.item-page-container{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 100px;
+  background-color: #dedede;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  padding: 50px 0 50px 0;
+}
+.item-page-container, p{
+  text-align: center;
+}
+.item-page-container *{
+  margin: 10px;
+}
+
+
+
+.add-to-cart-btn-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: #fff;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 30%;
+  height: 50px;
+  position: absolute;
+  bottom: -100px;
+}
+
+.add-to-cart-btn-2:hover {
+  background-color: #45a049;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.box{
+  background:white;
+  width:300px;
+  border-radius:6px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 70px 0px;
+  border: #2980b9 4px solid; 
+}
+.box h1,input{
+  text-align:center;
+}
+
+.email{
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width:250px;
+  color:#AAAAAA;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+}
+
+.password{
+  border-radius:4px;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  padding: 8px;
+  width:250px;
+  font-size:1em;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn, #btn2{
+  background:#2ecc71;
+  width:125px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:4px;
+  border: #27ae60 1px solid;
+  text-align: center;
+  margin-top:20px;
+  margin-bottom:20px;
+  float:left;
+  margin-left:16px;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.btn:hover{
+  background:#2CC06B; 
+}
+
+#btn2{
+  background:#3498db;
+  border: #2980b9 1px solid;
+}
+
+#btn2:hover{ 
+background:#3594D2; 
+}
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
